@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://www.portalgarrahan.org.ar/wp-content/uploads/2021/12/little-beautiful-girl-at-the-dentist-looking-and-smiling-scaled.jpeg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../assets/fondo.jpeg') no-repeat center center;
     background-size: cover;
 }
 
@@ -93,3 +93,33 @@ a {
 a:hover {
   color: inherit;
 }
+
+.banner {
+  color: #050505; /* Texto oscuro */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  width:  70%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.3); /* Color blanco translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borde translúcido */
+  backdrop-filter: blur(40px); /* Desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para el efecto 3D */
+  padding: 20px; /* Espaciado interno */
+  font-size: 20px; /* Ajusta el tamaño según tus necesidades */
+  line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+
+.banner p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.banner strong {
+  color: #0400ff; /* Destacar el texto inicial */
+  font-size: 1.1em;
+}
+
