@@ -1,0 +1,14 @@
+.conteiner-ed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+}
+
+#conteiner-ed{
+   background-color: rgba(255, 255, 255, 0.492);
+   padding: 20px;
+   border-radius: 20px;
+   max-width: 500px;
+}
