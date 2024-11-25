@@ -13,7 +13,6 @@ export { EditarPaciente } from "../Components/EditarPaciente"
 
 //Componentes Dentista
 export { TablaDentista } from "../Components/TablaDentista"
-export { AgregarDentista } from "../Components/AgregarDentista"
 export { EditarDentista } from "../Components/EditarDentista"
 
 //Componentes Historial Clinico

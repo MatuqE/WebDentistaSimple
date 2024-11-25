@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { AgregarDentista, EditarDentista, Footer, Header, TablaDentista } from "../Constants";
+import { EditarDentista, Footer, Header, TablaDentista } from "../Constants";
 import "../Styles/Dentista.css";
 import dentistasData from "../data/dentistasData";
+import AgregarDentista from "../Components/Agregardentista";
 
 export const Dentista = () => {
   const [dentistas, setDentistas] = useState(dentistasData);
