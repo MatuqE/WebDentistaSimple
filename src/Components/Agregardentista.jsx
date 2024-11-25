@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../Styles/Agregar.css";
 
-export const AgregarDentista = ({ onAgregar, handleVolverClick }) => {
+ export const AgregarDentista = ({ onAgregar, handleVolverClick }) => {
   let navigate = useNavigate();
 
   // Estados para los campos del formulario
