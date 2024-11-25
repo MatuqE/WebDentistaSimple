@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { EditarDentista, Footer, Header, TablaDentista } from "../Constants";
+import { AgregarNuevoDentista, EditarDentista, Footer, Header, TablaDentista } from "../Constants";
 import "../Styles/Dentista.css";
 import dentistasData from "../data/dentistasData";
-import AgregarDentista from "../Components/Agregardentista";
 
 export const Dentista = () => {
   const [dentistas, setDentistas] = useState(dentistasData);
@@ -79,7 +78,7 @@ export const Dentista = () => {
       )}
 
       {view === "agregar" && (
-        <AgregarDentista onAgregar={handleAgregarDentista} handleVolverClick={handleVolverClick} />
+        <AgregarNuevoDentista onAgregar={handleAgregarDentista} handleVolverClick={handleVolverClick} />
       )}
 
       {view === "editar" && (

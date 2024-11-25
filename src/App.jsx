@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import { Pacientes, Login, EditarPaciente, AgregarPaciente, RegistrarLogin, Home, AgregarDentista, Dentista, EditarDentista, HistorialClinico, AgregarHistorial, EditarHistorial, Turno, AgregarTurno, EditarTurno, MostrarJoins} from "./Constants"
+import { Pacientes, Login, EditarPaciente, AgregarPaciente, RegistrarLogin, Home,  Dentista, EditarDentista, HistorialClinico, AgregarHistorial, EditarHistorial, Turno, AgregarTurno, EditarTurno, MostrarJoins, AgregarNuevoDentista} from "./Constants"
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             <Route  path="/pacientes/agregar" element={<AgregarPaciente/>}/>
 
             <Route  path="/dentistas" element={<Dentista/>}/>
-            <Route  path="/agregarDentista" element={<AgregarDentista/>}/>
+            <Route  path="/agregarDentista" element={<AgregarNuevoDentista/>}/>
             <Route  path="/editardentista/:id" element={<EditarDentista/>}/>
             
             <Route  path="/historialClinico" element={<HistorialClinico/>}/>
