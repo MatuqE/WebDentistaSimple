@@ -1,34 +1,59 @@
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../Styles/Header.css";
 
 export const Header = () => {
-  return (
-    <div className="linea">
-      <header className="header_prinpipal">
-        <div className="Logo_header">
-          <a href="/">
-          <img src={logo} alt="" className="img_logo" />
-          </a>
-          
-        </div>
+  const location = useLocation();
 
-        <nav>
-          <Link to="/" className="link">
+  return (
+    <div className="linea bg-dark">
+      <header className="header_principal">
+
+        <nav className="row">
+        <div className=" justify-content-start d-flex col" >
+          <a href="/" className="Logo_header">
+            <img src={logo} alt="" className="img_logo" />
+          </a>
+        </div>
+        <div className="justify-content-end d-flex col">
+
+          <Link
+            to="/"
+            className={`link ${location.pathname === "/" ? "active" : ""}`}
+          >
             Home
           </Link>
-          <Link to="/dentistas" className="link">
+          <Link
+            to="/dentistas"
+            className={`link ${
+              location.pathname === "/dentistas" ? "active" : ""
+            }`}
+          >
             Dentista
           </Link>
-          <Link to="/pacientes" className="link">
+          <Link
+            to="/pacientes"
+            className={`link ${
+              location.pathname === "/pacientes" ? "active" : ""
+            }`}
+          >
             Paciente
           </Link>
-          <Link to="/historialClinico" className="link">
-            Historial clinico
+          <Link
+            to="/historialClinico"
+            className={`link ${
+              location.pathname === "/historialClinico" ? "active" : ""
+            }`}
+          >
+            Historial clínico
           </Link>
-          <Link to="/turno" className="link">
+          <Link
+            to="/turno"
+            className={`link ${location.pathname === "/turno" ? "active" : ""}`}
+          >
             Turnos
           </Link>
+        </div>
         </nav>
       </header>
     </div>

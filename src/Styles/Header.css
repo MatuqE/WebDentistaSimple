@@ -1,27 +1,36 @@
-.header_prinpipal{
+/* Estilos para el header */
+.header_prinpipal {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.494);
-    
-}
-
-.link{
+  }
+  
+  .link {
     font-size: 20px;
     font-weight: bold;
     padding-right: 20px;
     color: white;
     margin: 5px;
-}
-.link:hover{
+    transition: color 0.3s ease; /* Agrega una transición para color */
+  }
+  
+  /* Resalta el enlace activo con un color diferente y negrita */
+  .link.active {
+    color: rgb(0, 183, 255); /* Color del enlace activo, puedes cambiarlo */
+    font-weight: bolder; /* Enfatiza el enlace activo */
+  }
+  
+  /* Efecto hover para los enlaces */
+  .link:hover {
     color: rgb(0, 183, 255);
-}
-
-
-.img_logo{ 
+  }
+  
+  .img_logo {
     width: 80px;
     margin-left: 20px;
     border-radius: 10px;
-}
+  }
+  
