@@ -17,7 +17,7 @@ export const EditarDentista = ({ handleVolverClick, dentista, handleGuardarEdit 
   const [sexo, setSexo] = useState("");
   const [turno, setTurno] = useState("");
 
-  console.log(dentista)
+
   // Función para obtener los datos del dentista
   const getDentista = () => {
     if (dentista) {
@@ -28,13 +28,11 @@ export const EditarDentista = ({ handleVolverClick, dentista, handleGuardarEdit 
       setMatricula(dentista.matricula || "");
       setSexo(dentista.sexo || "");
       setTurno(dentista.turno || "");
-      console.log(dentista.nombre)
     } else {
       console.error("No se recibieron datos del dentista.");
     }
   };
 
-  console.log(nombre)
   // Función para manejar la edición
   const handleEditar = async () => {
     if (!nombre || !apellido || !dni || !matricula || !sexo || !turno) {

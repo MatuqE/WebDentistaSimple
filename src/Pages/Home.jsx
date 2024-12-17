@@ -10,10 +10,10 @@ import { Footer } from "../Constants";
 export const Home = () => {
   return (
     <div className="fondo">
-      <div className="contenedor-home">
         <Link to="/login" className="contenedor-login">
           <button className="boton-login">Iniciar Sesión</button>
         </Link>
+      <div className="contenedor-home">
 
         <header>
           <h3 className="h2_main_header">"Centro de Salud Dental"</h3>

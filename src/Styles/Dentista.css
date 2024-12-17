@@ -1,32 +1,104 @@
-.contenedor-dentista{
-   
-    text-align: center;
+.contenedor-dentista {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.divTabla{
-      padding-bottom: 10em;
-      min-height: 40em;
-    
+
+/* Ajusta el encabezado */
+.contenedor-dentista h2 {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.572);
+  margin-bottom: 20px;
+}
+
+/* Tabla */
+.divTabla {
+  padding-bottom: 10em;
+  min-height: 40em;
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto; /* Scroll horizontal si el contenido es muy ancho */
+  margin-top: 20px;
+}
+
+/* Botón agregar */
+.boton-agregar {
+  border-radius: 50px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.boton-agregar:hover {
+  background-color: #1e7e34;
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) {
+  .contenedor-ad{
+    width: 30em;
   }
-  
-  .contenedor-dentista h2{
-      padding: 20px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.572);
+  .conteiner-ed{
+    width: 30em;
   }
-  
-  .boton-agregar{
-    border-radius: 50px;
-    background-color: #28a745;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    letter-spacing: 0.5px;
-    border: none;
-    transition: transform 0.3s ease;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenedor-dentista h2 {
+      font-size: 1.5rem;
   }
-  
-  .boton-agregar:hover{
-    background-color: #1e7e34; 
-    transform: scale(1.1); 
+
+  .boton-agregar {
+      font-size: 0.9rem;
+      padding: 8px 16px;
   }
+
+  .divTabla {
+      min-height: 30em;
+      padding-bottom: 8em;
+  }
+  .contenedor-ad{
+    width: 20em;
+  }
+  .conteiner-ed{
+    width: 20em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-dentista h2 {
+      font-size: 1.2rem;
+  }
+
+  .boton-agregar {
+      width: 100%; /* Botón ocupa todo el ancho */
+      font-size: 0.8rem;
+      padding: 10px;
+  }
+
+  .divTabla {
+      min-height: 20em;
+      padding-bottom: 5em;
+  }
+
+  .contenedor-ad{
+    width: 12em;
+  }
+  .conteiner-ed{
+    width: 12em;
+  }
+}
+

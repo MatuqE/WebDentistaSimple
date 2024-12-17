@@ -6,17 +6,12 @@ export const Header = () => {
   const location = useLocation();
 
   return (
-    <div className="linea bg-dark">
+    <div className="linea">
       <header className="header_principal">
-
-        <nav className="row">
-        <div className=" justify-content-start d-flex col" >
-          <a href="/" className="Logo_header">
-            <img src={logo} alt="" className="img_logo" />
-          </a>
-        </div>
-        <div className="justify-content-end d-flex col">
-
+        <a href="/" className="Logo_header">
+          <img src={logo} alt="Logo" className="img_logo" />
+        </a>
+        <nav>
           <Link
             to="/"
             className={`link ${location.pathname === "/" ? "active" : ""}`}
@@ -49,11 +44,12 @@ export const Header = () => {
           </Link>
           <Link
             to="/turno"
-            className={`link ${location.pathname === "/turno" ? "active" : ""}`}
+            className={`link ${
+              location.pathname === "/turno" ? "active" : ""
+            }`}
           >
             Turnos
           </Link>
-        </div>
         </nav>
       </header>
     </div>

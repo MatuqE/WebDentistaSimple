@@ -55,8 +55,12 @@ export const Dentista = () => {
   };
 
   return (
-    <div className="contenedor-dentista">
+    
+    
+    <div>
       <Header />
+    <div className="contenedor-dentista">
+
       <h2>Dentista</h2>
 
       {view === "tabla" && (
@@ -64,7 +68,7 @@ export const Dentista = () => {
           <button
             className="boton-agregar"
             onClick={() => setView("agregar")}
-          >
+            >
             Agregar Dentista
           </button>
           <div className="container divTabla">
@@ -76,6 +80,7 @@ export const Dentista = () => {
           </div>
         </>
       )}
+              
 
       {view === "agregar" && (
         <AgregarNuevoDentista onAgregar={handleAgregarDentista} handleVolverClick={handleVolverClick} />
@@ -90,6 +95,7 @@ export const Dentista = () => {
         />
       )}
       
+    </div>
       <Footer />
     </div>
   );
